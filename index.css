@@ -1,0 +1,285 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+#header {
+  margin-bottom: 40px;
+}
+#service {
+  background-color: #0076bd;
+  display: flex;
+  justify-content: space-evenly;
+}
+#service h3 {
+  color: white;
+}
+#service select {
+  font-size: 20px;
+  background-color: #0076bd;
+  color: white;
+  padding: 20px;
+}
+#service option {
+  font-size: 20px;
+  background-color: #fff;
+  color: black;
+}
+#navbar {
+  width: 90%;
+  margin: auto;
+}
+#navbar > div > div:nth-child(3) > img {
+  width: 9%;
+  height: 80%;
+}
+#logo {
+  width: 100%;
+  height: 100%;
+}
+form > input {
+  border: 0.5px solid rgb(189, 186, 186);
+  padding: 13px 4px 13px 40px;
+  background: transparent
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E")
+    no-repeat 13px center;
+  width: 60%;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+input + button {
+  border: 1px solid #555;
+  padding: 13px 10px 13px 10px;
+  margin-left: -5px;
+  background-color: teal;
+  color: white;
+  font-weight: bold;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+#navbar > div:first-child {
+  display: flex;
+  margin-top: 30px;
+  justify-content: center;
+}
+#navbar > div:first-child > div:nth-child(2) {
+  width: 99%;
+  display: grid;
+  align-items: center;
+  margin-left: 3%;
+}
+#navbar > div:first-child > div:nth-child(1) {
+  width: 10%;
+}
+#navbar > div:first-child > div:nth-child(3) {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+#bigbannermain {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-bottom: 40px;
+}
+#bigbannersmall {
+  position: absolute;
+  right: 80px;
+  bottom: 30px;
+  background-color: white;
+  width: 300px;
+  text-align: center;
+  padding: 2%;
+}
+#bigbannersmall > button {
+  width: 60%;
+  font-size: 20px;
+  padding: 5px;
+  background-color: white;
+}
+#bigbannersmall > p {
+  font-size: 19px;
+  line-height: 25px;
+}
+#bigbannerbig > img {
+  width: 100%;
+}
+#special {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  text-align: center;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 80px;
+}
+#special img {
+  width: 100%;
+}
+#new {
+  width: 93%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-bottom: 60px;
+}
+#new > div:first-child > div > img {
+  width: 100%;
+}
+#new > div > div > img {
+  width: 100%;
+}
+
+#new > div {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+#new > div > div {
+  height: 90%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+#new p {
+  margin-bottom: 5px;
+}
+#ugg {
+  display: flex;
+  gap: 10px;
+  justify-content: space-evenly;
+  width: 95%;
+  margin: auto;
+  margin-bottom: 60px;
+}
+#ugg > div:first-child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 33%;
+  justify-content: center;
+}
+#ugg > div {
+  width: 60%;
+}
+#ugg img {
+  width: 100%;
+}
+#ugg button {
+  font-size: 18px;
+  padding: 10px;
+  background-color: #fff;
+  font-weight: bold;
+  border-radius: 10px;
+}
+#ugg button:hover {
+  font-size: 18px;
+  padding: 10px;
+  background-color: rgb(53, 53, 53);
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+#ugg p {
+  tab-size: 18px;
+  line-height: 20px;
+}
+#ugg h2 {
+  margin-bottom: 0px;
+}
+
+.width-95 {
+  width: 95%;
+}
+.marginauto {
+  margin: auto;
+}
+.width-100 {
+  width: 100%;
+}
+footer {
+  margin-top: 45px;
+}
+footer > div:last-child {
+  display: flex;
+  gap: 10px;
+  justify-content: space-evenly;
+  background-color: #003953;
+  color: white;
+}
+
+footer > div:last-child > div:nth-child(1) {
+  width: 20%;
+}
+footer > div:last-child > div:nth-child(2) {
+  width: 20%;
+}
+footer > div:last-child > div:nth-child(3) {
+  width: 20%;
+}
+footer > div:last-child > div:nth-child(4) {
+  width: 20%;
+}
+footer > div:last-child > div:nth-child(4) > div:first-child {
+  background-color: #0e455f;
+  padding: 10px;
+  border-radius: 5px;
+}
+footer > div:last-child button {
+  background-color: #0e455f;
+  padding: 10px;
+  border-radius: 5px;
+  border-color: white;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+}
+footer > div:last-child button:hover {
+  background-color: #ffff;
+  padding: 10px;
+  color: black;
+}
+footer > div:last-child > div > div {
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+footer img {
+  width: 10%;
+}
+footer > div:first-child {
+  height: auto;
+  color: white;
+  background-color: #00263a;
+  padding: 15px;
+}
+
+footer > div:first-child > label {
+  display: block;
+  font-size: 17px;
+  margin-left: 2.5%;
+}
+footer > div:first-child > button {
+  padding: 10px;
+  font-weight: bold;
+  background-color: #00263a;
+  color: white;
+  border: 0.9px solid white;
+  border-radius: 5px;
+  font-size: 18px;
+  margin-left: 10px;
+}
+footer > div:first-child > button:hover {
+  background-color: #fff;
+  color: gray;
+}
+footer > div:first-child > input {
+  font-size: 18px;
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 10px;
+  margin-left: 2.5%;
+}
+footer > div:first-child > h2 {
+  margin-left: 2.5%;
+}
