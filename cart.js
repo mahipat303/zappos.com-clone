@@ -1,8 +1,14 @@
 cartData = JSON.parse(localStorage.getItem("cart")) || [];
 display(cartData);
 function display(data) {
+  total = 0;
+  totalprice = 0;
   document.querySelector(".appendhere").innerHTML = "";
   data.forEach((ele, index) => {
+    quat = ele.qua;
+    total += quat;
+    document.querySelector(".totalitems").innerText = total;
+    document.querySelector(".totalitems1").innerText = total;
     cartappenditem = document.createElement("div");
     cartappenditem.className = "cartappenditem";
     productdetail = document.createElement("div");
@@ -24,46 +30,36 @@ function display(data) {
     productprice = document.createElement("div");
     productprice.className = "productprice";
     h2 = document.createElement("h2");
-    // if (ele.qua) {
-    //   qua = ele.qua;
-    // } else {
-    //   qua = 1;
-    // }
-    // let newp = qua * ele.price;
-    h2.innerText = ele.price;
-    select = document.createElement("select");
-    // option0 = document.createElement("option");
-    // option0.value = "6";
-    // option0.innerText = "6";
-
-    option1 = document.createElement("option");
-    option1.value = "1";
-    option1.innerText = "1";
-    option2 = document.createElement("option");
-    option2.value = "2";
-    option2.innerText = "2";
-    option3 = document.createElement("option");
-    option3.value = "3";
-    option3.innerText = "3";
-    option4 = document.createElement("option");
-    option4.value = "4";
-    option4.innerText = "4";
-    option5 = document.createElement("option");
-    option5.value = "5";
-    option5.innerText = "5";
-    select.append(option1, option2, option3, option4, option5);
-    select.addEventListener("change", function () {
-      quantityChange(ele, index);
+    if (ele.qua) {
+      qua = ele.qua;
+    }
+    let newp = qua * ele.price;
+    h2.innerText = newp;
+    btn1 = document.createElement("button");
+    btn1.innerText = "+";
+    btn1.className = "minusbtnforp";
+    btn1.addEventListener("click", function () {
+      removeCarto(ele, index);
+    });
+    btn2 = document.createElement("button");
+    btn2.innerText = "-";
+    btn2.className = "minusbtnforp";
+    btn2.addEventListener("click", function () {
+      removeCartoo(ele, index);
     });
     btn = document.createElement("button");
     btn.innerText = "REMOVE";
     btn.addEventListener("click", function () {
       removeCart(ele, index);
     });
-    productprice.append(h2, select, btn);
+    p2 = document.createElement("p");
+    p2.innerText = qua;
+    productprice.append(h2, btn1, p2, btn2, btn);
     productdetail.append(cartproductimage, cartproductdetail);
     cartappenditem.append(productdetail, productprice);
     document.querySelector(".appendhere").append(cartappenditem);
+    totalprice += newp;
+    document.querySelector(".cartvaluet").innerText = totalprice;
   });
 }
 
@@ -74,19 +70,73 @@ function removeCart(ele, index) {
   localStorage.setItem("cart", JSON.stringify(cartData));
   display(cartData);
 }
-
-function quantityChange(ele, index) {
-  // quantity = document.querySelector("select").value;
-
-  quantity = select.value;
-  select.style.color = "red";
-  console.log(quantity);
+function removeCarto(ele, index) {
+  btn1.style.color = "red";
   cartData = JSON.parse(localStorage.getItem("cart")) || [];
   cartData.forEach(function (element) {
     if (element.code == ele.code) {
-      element.qua = Number(quantity);
+      element.qua++;
     }
   });
+
   localStorage.setItem("cart", JSON.stringify(cartData));
-  // display(cartData);
+  display(cartData);
 }
+function removeCartoo(ele, index) {
+  cartData = JSON.parse(localStorage.getItem("cart")) || [];
+  cartData.forEach(function (element) {
+    if (element.code == ele.code) {
+      if (element.qua > 1) {
+        element.qua--;
+      }
+    }
+  });
+
+  localStorage.setItem("cart", JSON.stringify(cartData));
+  display(cartData);
+}
+
+document
+  .querySelector(".summarymain>button")
+  .addEventListener("click", checOut);
+function checOut() {
+  console.log("hello");
+  window.location.href = "checkout.html";
+}
+
+// navbar script starts here ====================>>>>>>>>>>>>>>>>>>>>>>
+
+document.querySelector(".logo>img").addEventListener("click", gohome);
+function gohome() {
+  console.log("hello");
+  window.location.href = "index.html";
+}
+
+entry = localStorage.getItem("entry") || 0;
+
+if (entry == 1) {
+  div1 = document.createElement("div");
+  a1 = document.createElement("a");
+  a1.innerText = "Logout";
+  a1.className = "logout";
+  div1.append(a1);
+  document.querySelector(".loginbtn").append(div1);
+} else {
+  div1 = document.createElement("div");
+  a1 = document.createElement("a");
+  a1.innerText = "Signin";
+  a1.href = "Login.html";
+  div1.append(a1);
+  div2 = document.createElement("div");
+  a2 = document.createElement("a");
+  a2.innerText = "Register";
+  //   a2.href = "Login.html";
+  a2.className = "hello";
+  div2.append(a2);
+  document.querySelector(".loginbtn").append(div1, div2);
+}
+
+document.querySelector(".logout").addEventListener("click", function () {
+  localStorage.setItem("entry", 0);
+  window.location.href = "/index.html";
+});

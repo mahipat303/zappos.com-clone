@@ -1,6 +1,16 @@
 #header {
   margin-bottom: 20px;
 }
+.logout {
+  cursor: pointer;
+}
+.mensredirect{
+  text-decoration: none;
+  color: #003953;
+}
+.hello {
+  cursor: pointer;
+}
 #service {
   background-color: #0076bd;
   display: flex;
@@ -48,6 +58,7 @@
   align-items: center;
   padding: 2%;
 }
+
 .loginbtn {
   width: 28%;
   /* border: solid red; */
@@ -61,7 +72,9 @@
   color: #003953;
   text-decoration: none;
 }
-
+#cartimg {
+  cursor: pointer;
+}
 form > input {
   border: 0.5px solid rgb(189, 186, 186);
   padding: 13px 4px 13px 40px;
@@ -86,7 +99,7 @@ input + button {
 
 /* dropdown ================>>>>> */
 
-.papa {
+.pap {
   display: flex;
   justify-content: space-evenly;
 }
@@ -97,22 +110,10 @@ a + div {
 .subdiv {
   display: none;
   margin: auto;
-
   position: absolute;
 }
-/* button {
-      text-align: right;
-    } */
-/* .pari:hover a + div {
-      display: inline;
-      position: relative;
-      left: 0px;
-      top: 5%;
-      z-index: 1;
-      border: solid red;
-      margin: auto;
-    } */
-.pari:hover .subdiv {
+
+.par:hover .subdiv {
   display: flex;
   position: absolute;
   margin-top: 0px;
@@ -123,7 +124,7 @@ a + div {
   /* border: solid red; */
   width: 80%;
 }
-.pari:hover #bigbannermain img {
+.par:hover #bigbannermain img {
   opacity: 0.2;
 }
 .subbox {
@@ -134,7 +135,7 @@ a + div {
   padding: 5px;
   width: 100%;
 }
-.pari > a {
+.par > a {
   font-size: 25px;
   text-decoration: none;
   font-weight: bold;
@@ -175,9 +176,55 @@ ul {
 }
 
 /* midle part css================================>>>>>>>>>>>>>>>>>>>>>>>>>>>************************ */
-
-.productcontainer {
+.customise {
+  display: flex;
+  gap: 20px;
+  justify-content: start;
+  margin-bottom: 40px;
+  margin-left: 24%;
+  margin-top: 40px;
+}
+.customise > button {
+  padding: 5px 20px;
+  font-size: 17px;
+  border-radius: 10px;
+  color: #0076bd;
+  background-color: #e5f1f8;
+  border: white solid 0.5px;
+}
+.customise > button:hover {
+  border-color: grey;
+}
+.midle {
+  display: flex;
+}
+.filter {
+  /* border: solid; */
+  width: 20%;
+  box-sizing: border-box;
+  padding: 5px;
+}
+.filter select {
+  display: block;
+  padding: 10px;
+  width: 100%;
+  border-radius: 10px;
+}
+.filter label {
+  display: block;
+  font-size: 18px;
+  color: teal;
+  margin-bottom: 10px;
+  padding-left: 5px;
+  margin-top: 20px;
+}
+.product {
   width: 80%;
+  /* border: solid teal 1px; */
+}
+.productcontainer {
+  /* border: solid red; */
+  width: 90%;
   margin: auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -192,9 +239,7 @@ ul {
 .productcontainer > div img {
   width: 85%;
 }
-.midle {
-  display: flex;
-}
+
 .productcontainer > div > div {
   display: flex;
   align-items: center;
@@ -325,6 +370,7 @@ footer > div:first-child > button {
   border-radius: 5px;
   font-size: 18px;
   margin-left: 10px;
+  width: 400px;
 }
 footer > div:first-child > button:hover {
   background-color: #fff;
@@ -339,4 +385,154 @@ footer > div:first-child > input {
 }
 footer > div:first-child > h2 {
   margin-left: 2.5%;
+}
+
+@media all and (min-width: 651px) and (max-width: 950px) {
+  .par:hover .subdiv {
+    left: 0px;
+    width: 100%;
+  }
+  .lastsubbox {
+    display: none;
+  }
+
+  .serch button {
+    width: 20%;
+  }
+  #service h3 {
+    display: none;
+  }
+  #service {
+    justify-content: initial;
+  }
+  .midle {
+    display: initial;
+  }
+  .hiden {
+    display: none;
+  }
+  .product {
+    width: 100%;
+    margin-top: 30px;
+  }
+  .productcontainer {
+    width: 95%;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .ffilter {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .tfilter {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .sfilter {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .fofilter {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .filter {
+    width: 100%;
+    box-sizing: initial;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .filter select {
+    display: initial;
+    padding: 10px;
+    width: 60%;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+  .filter label {
+    display: initial;
+    font-size: 18px;
+    color: teal;
+    margin-bottom: 10px;
+    padding-left: 5px;
+    margin-top: 20px;
+  }
+}
+@media all and (min-width: 50px) and (max-width: 650px) {
+  .dropgone {
+    display: none;
+  }
+
+  .serch button {
+    width: 25%;
+  }
+  #service h3 {
+    display: none;
+  }
+  #service {
+    justify-content: initial;
+  }
+  .midle {
+    display: initial;
+  }
+  .hiden {
+    display: none;
+  }
+  .product {
+    width: 100%;
+    margin-top: 30px;
+  }
+  .productcontainer {
+    width: 95%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .ffilter {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .tfilter {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .sfilter {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .fofilter {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .filter {
+    width: 100%;
+    box-sizing: initial;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .filter select {
+    display: initial;
+    padding: 10px;
+    width: 60%;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+  .filter label {
+    display: initial;
+    font-size: 18px;
+    color: teal;
+    margin-bottom: 10px;
+    padding-left: 5px;
+    margin-top: 20px;
+  }
+  footer > div:first-child > button {
+    width: 100px;
+  }
 }

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup on Zappos</title>
+    <link rel="stylesheet" href="/signup.css" />
+  </head>
+  <body>
+    <div class="slogo">
+      <img
+        src="https://images-na.ssl-images-amazon.com/images/G/01/zappos/melody/logo-blue-small._CB485919770_.svg"
+      />
+    </div>
+    <div id="main">
+      <h1>Create account</h1>
+      <form id="form" type="submit">
+        <label for="name">Your name</label>
+        <input type="text" name="name" id="name" placeholder="Your name" />
+        <label for="mail">Email</label>
+        <input type="email" name="mail" id="mail" placeholder="Enter email" />
+
+        <label for="pass">Password</label>
+        <input
+          type="password"
+          name="pass"
+          id="password"
+          placeholder="Enter password"
+          minlength="6"
+        />
+        <label for="pass">Re-enter password</label>
+        <input
+          type="password"
+          name="pass1"
+          id="password1"
+          placeholder="Enter password"
+        />
+        <input type="submit" value="Create your Zappos account" />
+      </form>
+      <p>
+        Don't have an email address or need additional help? Don't worry! Give
+        us a call at <span>(800) 927-7671</span>
+      </p>
+      <h3>Already have an account? <a href="Login.html">Sign-In</a></h3>
+    </div>
+  </body>
+</html>
+<script src="/signup.js"></script>
