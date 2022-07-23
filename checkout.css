@@ -1,0 +1,331 @@
+#header {
+  margin-bottom: 20px;
+}
+#service {
+  background-color: #0076bd;
+  display: flex;
+  justify-content: space-evenly;
+}
+#service h3 {
+  color: white;
+}
+#service select {
+  font-size: 20px;
+  background-color: #0076bd;
+  color: white;
+  padding: 20px;
+}
+#service option {
+  font-size: 20px;
+  background-color: #fff;
+  color: black;
+}
+#navbar {
+  width: 100%;
+  margin: auto;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 25px 20px -20px;
+}
+#navbar > div:first-child {
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+  margin: auto;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  /* border: solid teal; */
+}
+.logo {
+  /* border: yellow solid; */
+  width: 14%;
+  display: flex;
+}
+.logo img {
+  width: 80%;
+}
+
+.loginbtn {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  /* border: solid; */
+  position: relative;
+}
+
+.loginbtn img{
+    position: absolute;
+    /* border: solid; */
+    width: 4%;
+    right: 10px;
+    top: 18%;
+}
+hr{
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+}
+#header form > input {
+  border: 0.5px solid rgb(189, 186, 186);
+  padding: 13px 4px 13px 40px;
+  background: transparent
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E")
+    no-repeat 13px center;
+  width: 70%;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+#header input + button {
+  width: 15%;
+  border: 1px solid #555;
+  padding: 13px 10px 13px 10px;
+  margin-left: -5px;
+  background-color: #003953;
+  color: white;
+  font-weight: bold;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+
+
+
+/* navbar ends here ===========================>>>>>>>>>>>>>>>>>>+++++++++ */
+
+#cardform {
+  display: none;
+}
+
+#addform > label {
+  text-align: left;
+}
+.addpluspromo label {
+  display: block;
+  font-size: 20px;
+  margin: 32px auto 10px auto;
+}
+.addpluspromo form [type="submit"] {
+  display: block;
+  margin: 40px auto 5px auto;
+  padding: 10px 10px;
+  border: white solid;
+  font-size: 20px;
+  width: 100%;
+  border-radius: 8px;
+}
+.addpluspromo form [type="submit"]:hover {
+  cursor: pointer;
+  background-color: grey;
+  color: white;
+  font-weight: bold;
+}
+
+#country,
+#expiry,
+#address1,
+#address2,
+#name,
+#city,
+#zip,
+#Phone,
+#cvv {
+  border-radius: 8px;
+  font-size: 20px;
+  width: 100%;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-left: 10px;
+  border: 0.5px solid rgb(206, 204, 204);
+}
+#expiry,
+#cvv {
+  width: 30%;
+  margin: auto;
+}
+#expiry {
+  margin-right: 17%;
+  margin-left: 0%;
+}
+
+#cardform > label:nth-child(2) {
+  display: none;
+}
+#cardform > label:nth-child(5) {
+  display: none;
+}
+#card,
+#cname {
+  border-radius: 8px;
+  font-size: 20px;
+  width: 80%;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-left: 10px;
+  border: 0.5px solid rgb(206, 204, 204);
+}
+.carddetail {
+  background-color: #f5f5f5;
+  padding: 10px;
+  margin-top: 30px;
+  border-radius: 20px;
+  border: grey solid 0.5px;
+}
+.addpluspromo {
+  display: flex;
+  gap: 20px;
+  width: 80%;
+  margin: auto;
+}
+.address {
+  box-sizing: border-box;
+  width: 60%;
+  margin: auto;
+  margin-top: 20px;
+  text-align: center;
+  padding: 20px;
+  padding-top: 5px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 15px;
+}
+.promo {
+  justify-content: center;
+  width: 50%;
+}
+.promoapply {
+  background-color: #f5f5f5;
+  height: 200px;
+  width: 100%;
+  text-align: center;
+  padding-top: 50px;
+  margin-top: 20px;
+  border-radius: 20px;
+  border: grey solid 0.5px;
+}
+.promo input {
+  padding: 10px;
+  border-radius: 5px;
+}
+.promo button {
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+.fastcheckout {
+  width: 80%;
+  margin: auto;
+  margin-top: 40px;
+}
+.fastcheckout button {
+  padding: 5px 5px;
+  border-radius: 7px;
+  border-color: #a88734 #9c7e31 #846a29;
+  background: linear-gradient(to bottom, #f7dfa5, #f0c14b);
+  position: relative;
+  /* text-align: center; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fastcheckout img:nth-child(1) {
+  width: 43%;
+}
+.fastcheckout img:nth-child(2) {
+  width: 8%;
+  /* margin-left: 25%; */
+  position: absolute;
+  right: 5px;
+  top: 20%;
+}
+.fastcheckout > div {
+  width: 50%;
+  background-color: #f5f5f5;
+  border: 0.5px solid grey;
+  border-radius: 20px;
+  padding-left: 20px;
+  /* padding-right: 20px; */
+}
+
+/* midle part ends here ==========================>>>>>>>>>>>>>>>>>>>>>>>>>>>+++++ */
+
+footer {
+  margin-top: 45px;
+}
+footer > div:last-child {
+  display: flex;
+  gap: 10px;
+  justify-content: space-evenly;
+  background-color: #003953;
+  color: white;
+}
+
+footer > div:last-child > div:nth-child(1) {
+  width: 20%;
+}
+footer > div:last-child > div:nth-child(2) {
+  width: 20%;
+}
+footer > div:last-child > div:nth-child(3) {
+  width: 20%;
+}
+footer > div:last-child > div:nth-child(4) {
+  width: 20%;
+}
+footer > div:last-child > div:nth-child(4) > div:first-child {
+  background-color: #0e455f;
+  padding: 10px;
+  border-radius: 5px;
+}
+footer > div:last-child button {
+  background-color: #0e455f;
+  padding: 10px;
+  border-radius: 5px;
+  border-color: white;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+}
+footer > div:last-child button:hover {
+  background-color: #ffff;
+  padding: 10px;
+  color: black;
+}
+footer > div:last-child > div > div {
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+footer img {
+  width: 10%;
+}
+footer > div:first-child {
+  height: auto;
+  color: white;
+  background-color: #00263a;
+  padding: 15px;
+}
+
+footer > div:first-child > label {
+  display: block;
+  font-size: 17px;
+  margin-left: 2.5%;
+}
+footer > div:first-child > button {
+  padding: 10px;
+  font-weight: bold;
+  background-color: #00263a;
+  color: white;
+  border: 0.9px solid white;
+  border-radius: 5px;
+  font-size: 18px;
+  margin-left: 10px;
+}
+footer > div:first-child > button:hover {
+  background-color: #fff;
+  color: gray;
+}
+footer > div:first-child > input {
+  font-size: 18px;
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 10px;
+  margin-left: 2.5%;
+}
+footer > div:first-child > h2 {
+  margin-left: 2.5%;
+}
