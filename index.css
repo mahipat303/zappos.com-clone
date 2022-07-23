@@ -1,3 +1,103 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+* {
+  font-family: sans-serif, "Times New Roman", Times, serif;
+}
+
+.mensredirect {
+  text-decoration: none;
+  color: #003953;
+}
+.logout {
+  cursor: pointer;
+}
+.hello {
+  cursor: pointer;
+}
+.zdiv {
+  height: 430px;
+  width: 60%;
+  display: none;
+  position: absolute;
+  top: 200px;
+  right: 20%;
+  z-index: 999;
+  background-color: #fff;
+  padding: 20px;
+}
+.head {
+  position: relative;
+  height: 50px;
+}
+.head button {
+  position: absolute;
+  top: 25%;
+  right: 5px;
+}
+.body {
+  height: 350px;
+  display: flex;
+  gap: 10px;
+  margin-top: 40px;
+}
+.left {
+  width: 50%;
+  /* display: grid; */
+  gap: 10px;
+}
+.left a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #003953;
+}
+.left a:hover {
+  color: white;
+  cursor: pointer;
+}
+.left button {
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #fff;
+  color: #003953;
+  border-radius: 5px;
+  padding: 10px 5px;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 40px;
+}
+.left button:hover {
+  cursor: pointer;
+  background-color: #0076bd;
+  color: white;
+}
+.right {
+  width: 50%;
+}
+
+.hello {
+  font-size: 30px;
+  text-decoration: underline;
+}
+.ll {
+  border: solid red 1px;
+  height: 300px;
+  width: 50%;
+  position: absolute;
+  top: 30vh;
+  right: 20vh;
+  /* right: 50%; */
+  background-color: orange;
+  z-index: 30;
+}
+#main {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  position: relative;
+}
 #header {
   margin-bottom: 20px;
 }
@@ -30,11 +130,10 @@
   width: 95%;
   margin: auto;
   margin-bottom: 20px;
-  margin-top: 30px;
+  margin-top: 10px;
   /* border: solid teal; */
 }
 .logo {
-  /* border: yellow solid; */
   width: 14%;
   display: flex;
 }
@@ -50,7 +149,6 @@
 }
 .loginbtn {
   width: 28%;
-  /* border: solid red; */
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -85,22 +183,17 @@ input + button {
 }
 
 /* dropdown ================>>>>> */
-.mensredirect {
-  text-decoration: none;
-  color: #003953;
-}
+
 .pap {
   display: flex;
   justify-content: space-evenly;
 }
 a + div {
   display: inline;
-  /* border: solid black; */
 }
 .subdiv {
   display: none;
   margin: auto;
-
   position: absolute;
 }
 
@@ -112,7 +205,6 @@ a + div {
   /* margin: auto; */
   right: 60px;
   background: #f4f4f4;
-  /* border: solid red; */
   width: 80%;
 }
 .par:hover #bigbannermain img {
@@ -137,7 +229,7 @@ a + div {
   width: 100%;
   height: 50%;
 }
-ul {
+.main ul {
   list-style-type: none;
 }
 .subbox li:hover {
@@ -166,185 +258,183 @@ ul {
   width: 100%;
 }
 
-/* navbar ends here =====================..>>>>>>>>>>>>>>>>>>>>>>>>>>> */
-.minusbtnforp {
-  padding: 2;
-  width: 50%;
-  font-weight: bold;
-  border-radius: 5px;
-  border: 0.5px solid #003953;
-  background-color: #f5f5f5;
-}
-.minusbtnforp:hover {
-  cursor: pointer;
-  background-color: #fff;
-  color: #003953;
-}
-.minusbtnforp + p {
-  font-size: 18px;
-  font-weight: bold;
-  margin-left: 16px;
-  margin-top: 2px;
-  margin-bottom: 2px;
-}
-.card {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: 20px;
-}
-.cartproduct {
-  /* border: solid; */
-  border: 0.5px solid grey;
-}
-/* .summary {
-    border: solid red;
-  } */
-.cartproduct > div:first-child {
-  display: flex;
-  justify-content: space-between;
-  padding-right: 5%;
-  background-color: #003953;
-  line-height: 10px;
-  margin-bottom: 20px;
-  color: white;
-  padding-left: 2%;
-  font-size: 20px;
-}
-.cartappenditem {
-  display: grid;
-  grid-template-columns: 3fr 1fr;
-  border: 4px #f5f5f5 solid;
-  margin-bottom: 10px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
-.totalitems,
-.totalitems1 {
-  font-size: 17px;
-  color: blue;
-  font-weight: bolder;
-}
-.cartvaluet {
-  color: #003953;
-  font-weight: bolder;
-  font-size: 22px;
-  margin-top: 5px;
-}
-.cartvaluet::before {
-  content: "$";
-}
-.productdetail {
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-  gap: 10px;
-}
-.cartproductimage {
-  /* border: solid; */
-  display: grid;
-  align-items: center;
-}
-.cartproductimage img {
-  width: 100%;
-}
-.cartproductdetail h3 {
-  margin-bottom: 0px;
-  /* padding: 0px; */
-}
-.cartproductdetail h3 + p {
-  margin-top: 0px;
-}
-.productprice {
+#bigbannermain {
   display: grid;
   justify-content: center;
   align-items: center;
-  align-content: flex-start;
-  /* border: solid; */
+  position: relative;
+  margin-bottom: 40px;
 }
 
-.productprice select {
-  display: block;
-  padding: 8px 10px;
-  font-size: 18px;
-  margin-bottom: 20px;
-  border-radius: 5px;
+#bigbannersmall {
+  position: absolute;
+  right: 80px;
+  bottom: 30px;
+  background-color: white;
+  width: 300px;
+  text-align: center;
+  padding: 2%;
 }
-.productprice button:last-child {
-  padding: 5px 10px;
-  padding-left: 0px;
-  border: none;
-  background-color: #fff;
+#bigbannersmall > button {
+  width: 60%;
+  font-size: 20px;
+  padding: 5px;
+  background-color: white;
+}
+#bigbannersmall > p {
+  font-size: 19px;
+  line-height: 25px;
+}
+#bigbannerbig > img {
+  width: 100%;
+}
+.special {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  text-align: center;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 60px;
+  margin-top: 40px;
+  /* border: solid; */
+}
+.special img {
+  width: 100%;
+}
+#new {
+  width: 93%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-bottom: 60px;
+}
+#new > div:hover p {
+  cursor: pointer;
+  color: blue;
   text-decoration: underline;
-  color: #003953;
+}
+#new > div:first-child > div > img {
+  width: 100%;
+}
+#new > div > div > img {
+  width: 100%;
+}
+#new > div {
+  height: 510px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+#new > div > div {
+  height: 90%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background-color: #eae8e8;
+}
+#new p {
+  margin-bottom: 2px;
+  margin-top: 5px;
+  margin-left: 20px;
+}
+#new > div > p:nth-child(2) {
+  font-size: 19px;
   font-weight: bold;
-  font-size: 18px;
   margin-top: 20px;
 }
-.productprice button:last-child:hover {
-  cursor: pointer;
-  color: blue;
-}
-.summarymain {
-  background-color: #f5f5f5;
-  padding: 10px;
-  display: grid;
-  justify-content: center;
-  border: 0.5px solid grey;
-}
-.summarymain button {
-  background: #a7e688;
-  border: 2px solid #a7e688;
-  border-radius: 4px;
-  color: #035d59;
-  cursor: pointer;
-  font: 700 14px/120% Open Sans, sans-serif;
-  min-width: 205px;
-  padding: 12px 14px;
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
-  width: 100%;
-}
-.policy {
+#ugg {
   display: flex;
-  /* gap: 30px; */
-  justify-content: space-evenly;
-  margin-bottom: 30px;
-}
-.policy > div {
-  display: flex;
-  width: 40%;
-  align-items: flex-start;
-  background-color: #f5f5f5;
   gap: 10px;
-  padding: 10px;
+  justify-content: space-evenly;
+  width: 95%;
+  margin: auto;
+  margin-bottom: 60px;
 }
-.policy > div > div:first-child {
-  display: grid;
-  /* border: solid; */
+#ugg > div:first-child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 33%;
+  justify-content: center;
 }
-.policy > div > div:nth-child(2) {
-  display: grid;
-  /* border: solid; */
+#ugg > div {
+  width: 60%;
 }
-.policy img {
+#ugg img {
   width: 100%;
-  /* padding: 20px 0px; */
 }
-.policy > div > div:nth-child(2) > p:first-child {
-  margin: 0px;
+#ugg button {
   font-size: 18px;
-  font-weight: 550;
+  padding: 10px;
+  background-color: #fff;
+  font-weight: bold;
+  border-radius: 10px;
 }
-.policy p {
-  margin: 0px;
-  line-height: 30px;
-  margin-bottom: 10px;
+#ugg button:hover {
+  font-size: 18px;
+  padding: 10px;
+  background-color: rgb(53, 53, 53);
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
 }
-.productprice > h2::before {
-  content: "$";
+#ugg p {
+  tab-size: 18px;
+  line-height: 20px;
+}
+#ugg h2 {
+  margin-bottom: 0px;
 }
 
-/* footer starts here ====================>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>++++++++++++ */
+/* style sec. css ===================================== */
+#styleroom {
+  display: flex;
+  gap: 10px;
+  justify-content: space-evenly;
+  width: 95%;
+  margin: auto;
+  margin-bottom: 60px;
+}
+#styleroom > div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 33%;
+  justify-content: center;
+}
+
+#styleroom > div {
+  width: 60%;
+}
+#styleroom img {
+  width: 100%;
+}
+#styleroom button {
+  font-size: 18px;
+  padding: 10px;
+  background-color: #fff;
+  font-weight: bold;
+  border-radius: 10px;
+}
+#styleroom button:hover {
+  font-size: 18px;
+  padding: 10px;
+  background-color: rgb(53, 53, 53);
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+#styleroom p {
+  /* tab-size: 18px; */
+  font-size: 18px;
+  line-height: 20px;
+}
+#styleroom h2 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
 
 .width-95 {
   width: 95%;
@@ -441,17 +531,17 @@ footer > div:first-child > input {
 footer > div:first-child > h2 {
   margin-left: 2.5%;
 }
+
 @media all and (min-width: 651px) and (max-width: 950px) {
   .par:hover .subdiv {
     left: 0px;
     width: 100%;
   }
-  .lastsubbox {
-    display: none;
-  }
-
   .serch button {
     width: 20%;
+  }
+  .lastsubbox {
+    display: none;
   }
   #service h3 {
     display: none;
@@ -459,12 +549,33 @@ footer > div:first-child > h2 {
   #service {
     justify-content: initial;
   }
+  #new {
+    width: 93%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-bottom: 60px;
+  }
+  #styleroom {
+    width: 100%;
+  }
+  #styleroom > div:nth-child(1) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .width-100 {
+    height: 200px;
+  }
+  .width-95 {
+    width: 100%;
+  }
 }
 @media all and (min-width: 50px) and (max-width: 650px) {
   .dropgone {
     display: none;
   }
-
   .serch button {
     width: 25%;
   }
@@ -474,11 +585,77 @@ footer > div:first-child > h2 {
   #service {
     justify-content: initial;
   }
+  #new {
+    width: 93%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-bottom: 60px;
+  }
+  #bigbannermain {
+    position: initial;
+    display: grid;
+    gap: 5px;
+    margin-bottom: 40px;
+  }
 
+  #bigbannersmall {
+    position: initial;
+    background-color: transparent;
+    width: 95%;
+    text-align: center;
+    padding: 10px;
+    display: initial;
+    justify-content: center;
+    margin: auto;
+  }
+  #bigbannersmall > button {
+    width: 50%;
+    font-size: 20px;
+    padding: 5px;
+    background-color: white;
+  }
+
+  .special {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 25px;
+    width: 95%;
+  }
+
+  #ugg {
+    display: flex;
+    gap: 10px;
+
+    flex-direction: column-reverse;
+
+    justify-content: space-evenly;
+    width: 98%;
+    margin: auto;
+    margin-bottom: 60px;
+  }
+  #ugg > div:first-child {
+    width: 100%;
+  }
+  #ugg > div {
+    width: 100%;
+  }
+  #styleroom {
+    flex-direction: column;
+    width: 97%;
+  }
+  #styleroom > div:nth-child(2) {
+    align-items: center;
+    width: 100%;
+    text-align: center;
+  }
+  #styleroom > div {
+    width: 100%;
+  }
+  #styleroom img {
+    width: 100%;
+  }
   footer > div:first-child > button {
     width: 100px;
-  }
-  .cartproductimage img {
-    width: 150%;
   }
 }
