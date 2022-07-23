@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+}
+h1 {
+  margin-bottom: 15px;
+}
+
+#main {
+  width: 30%;
+  margin: auto;
+  margin-top: 20px;
+  text-align: center;
+  padding: 20px;
+  padding-top: 5px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 15px;
+}
+
+label {
+  display: block;
+  font-size: 20px;
+  margin: 32px auto 10px auto;
+}
+form [type="submit"] {
+  display: block;
+  margin: 40px auto 5px auto;
+  padding: 10px 10px;
+  border: white solid;
+  font-size: 20px;
+  width: 100%;
+  border-radius: 8px;
+}
+form [type="submit"]:hover {
+  cursor: pointer;
+  background-color: grey;
+  color: white;
+  font-weight: bold;
+}
+
+#otp {
+  border-radius: 8px;
+  font-size: 20px;
+  width: 100%;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-left: 10px;
+  border: 0.5px solid rgb(206, 204, 204);
+}
