@@ -6,7 +6,6 @@
   display: flex;
   justify-content: space-evenly;
 }
-
 #service h3 {
   color: white;
 }
@@ -86,7 +85,10 @@ input + button {
 }
 
 /* dropdown ================>>>>> */
-
+.mensredirect {
+  text-decoration: none;
+  color: #003953;
+}
 .pap {
   display: flex;
   justify-content: space-evenly;
@@ -101,18 +103,7 @@ a + div {
 
   position: absolute;
 }
-/* button {
-      text-align: right;
-    } */
-/* .par:hover a + div {
-      display: inline;
-      position: relative;
-      left: 0px;
-      top: 5%;
-      z-index: 1;
-      border: solid red;
-      margin: auto;
-    } */
+
 .par:hover .subdiv {
   display: flex;
   position: absolute;
@@ -176,7 +167,26 @@ ul {
 }
 
 /* navbar ends here =====================..>>>>>>>>>>>>>>>>>>>>>>>>>>> */
-
+.minusbtnforp {
+  padding: 2;
+  width: 50%;
+  font-weight: bold;
+  border-radius: 5px;
+  border: 0.5px solid #003953;
+  background-color: #f5f5f5;
+}
+.minusbtnforp:hover {
+  cursor: pointer;
+  background-color: #fff;
+  color: #003953;
+}
+.minusbtnforp + p {
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 16px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
 .card {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -203,6 +213,25 @@ ul {
 .cartappenditem {
   display: grid;
   grid-template-columns: 3fr 1fr;
+  border: 4px #f5f5f5 solid;
+  margin-bottom: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.totalitems,
+.totalitems1 {
+  font-size: 17px;
+  color: blue;
+  font-weight: bolder;
+}
+.cartvaluet {
+  color: #003953;
+  font-weight: bolder;
+  font-size: 22px;
+  margin-top: 5px;
+}
+.cartvaluet::before {
+  content: "$";
 }
 .productdetail {
   display: grid;
@@ -225,7 +254,6 @@ ul {
   margin-top: 0px;
 }
 .productprice {
-  /* border: solid blue; */
   display: grid;
   justify-content: center;
   align-items: center;
@@ -263,13 +291,6 @@ ul {
   border: 0.5px solid grey;
 }
 .summarymain button {
-  /* padding: 10px 15px;
-    border-radius: 10px;
-    font-weight: bold;
-    color: #003953;
-    background-color: #a7e688;
-    border: none;
-    font-size: 16px; */
   background: #a7e688;
   border: 2px solid #a7e688;
   border-radius: 4px;
@@ -281,12 +302,6 @@ ul {
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  /* touch-action: manipulation; */
-  /* transition: all 0.3s ease 0s; */
-  /* -webkit-user-select: none; */
-  /* -moz-user-select: none; */
-  /* -o-user-select: none; */
-  /* user-select: none; */
   width: 100%;
 }
 .policy {
@@ -410,6 +425,7 @@ footer > div:first-child > button {
   border-radius: 5px;
   font-size: 18px;
   margin-left: 10px;
+  width: 400px;
 }
 footer > div:first-child > button:hover {
   background-color: #fff;
@@ -424,4 +440,45 @@ footer > div:first-child > input {
 }
 footer > div:first-child > h2 {
   margin-left: 2.5%;
+}
+@media all and (min-width: 651px) and (max-width: 950px) {
+  .par:hover .subdiv {
+    left: 0px;
+    width: 100%;
+  }
+  .lastsubbox {
+    display: none;
+  }
+
+  .serch button {
+    width: 20%;
+  }
+  #service h3 {
+    display: none;
+  }
+  #service {
+    justify-content: initial;
+  }
+}
+@media all and (min-width: 50px) and (max-width: 650px) {
+  .dropgone {
+    display: none;
+  }
+
+  .serch button {
+    width: 25%;
+  }
+  #service h3 {
+    display: none;
+  }
+  #service {
+    justify-content: initial;
+  }
+
+  footer > div:first-child > button {
+    width: 100px;
+  }
+  .cartproductimage img {
+    width: 150%;
+  }
 }
