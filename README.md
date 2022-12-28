@@ -9,6 +9,7 @@
 ## features
 - signUp/signin
 - Add to cart
+- cart customization
 - checkout
 - payment
 
